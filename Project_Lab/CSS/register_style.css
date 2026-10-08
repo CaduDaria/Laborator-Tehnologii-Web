@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333333;
+    min-height: 100vh;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a56db;
+    font-size: 1.8rem;
+}
+
+.row {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="date"], 
+input[type="file"], 
+select {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 10px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #1a56db;
+}
+
+.two-col {
+    display: flex;
+    gap: 12px;
+}
+
+.two-col > div {
+    flex: 1;
+}
+
+.radio-group, .checkbox-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    background-color: #f9fafb;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #e5e7eb;
+}
+
+.radio-group label, .checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    cursor: pointer;
+    margin: 0;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background-color: #1a56db;
+    color: #ffffff;
+}
+
+.btn.primary:hover {
+    background-color: #1e429f;
+}
+
+.btn.ghost {
+    background-color: #e5e7eb;
+    color: #374151;
+}
+
+.btn.ghost:hover {
+    background-color: #d1d5db;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.login-link a {
+    color: #1a56db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
