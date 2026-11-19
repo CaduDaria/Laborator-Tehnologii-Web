@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Foto</title>
+
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/galerie.css' %}">
+</head>
+<body>
+    <nav class="navigation">
+        <a href="{% url 'home' %}">Acasă</a>
+        <a href="{% url 'galerie' %}">Galerie</a>
+    </nav>
+
+    <h1>Galerie Imagini</h1>
+
+    <div class="carousel-container">
+        <div class="carousel-view">
+            <img id="carousel-image"
+                 src="{% static 'MEDIA/g1.jpg' %}"
+                 alt="Carusel">
+        </div>
+    </div>
+
+    <script src="{% static 'JS/cursor.js' %}"></script>
+    <script src="{% static 'JS/galerie.js' %}"></script>
+</body>
+</html>
